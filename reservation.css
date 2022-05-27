@@ -1,3 +1,29 @@
-* {
-  background-color: red;
+/* HEADER */
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: end;
+  background-color: rgba(240,234,234,255);
+}
+
+header img {
+  /*margin: 0.5em 40em 0.5em 3em;*/
+  margin: 0.5em auto 0.5em 3em;
+  width: 50px;
+  height: auto;
+
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+  margin: 0 1.5em;
+  align-self: center;
+  border: 5px solid black;
+  padding: 0 5px;
 }
