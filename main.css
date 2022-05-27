@@ -2,27 +2,20 @@
 
 body {
   margin: 0;
-  font-family: 'Inconsolata', monospace;
-  font-family: 'Koulen', cursive;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Koulen', cursive;
+  font-family: 'Roboto Flex', sans-serif;
+  background-color: #F1EDEB;
 }
 
 header {
   display: flex;
   justify-content: end;
-  background-color: rgba(240,234,234,255);
-  font-family: 'Roboto Flex', sans-serif;
+  background-color: #e2dede;
 }
 
 header img {
-  /*margin: 0.5em 40em 0.5em 3em;*/
-  margin: 0.5em auto 0.5em 3em;
+  margin: 0.5em 1em 0.5em 3em;
   width: 50px;
   height: auto;
-
 }
 
 header a {
@@ -35,6 +28,80 @@ header a {
   padding: 0 5px;
 }
 
+header p {
+  margin: 1.8em auto 0 1em;
+  height: auto;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
 /* Section */
+.our-story {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-top: 1em;
+}
+
+.our-story img {
+  border: 20px solid black;
+  border-style: double;
+  width: 60%;
+  height: auto;
+}
+
+.centered {
+  font-size: 3em;
+  letter-spacing: 4px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.our-story-paragraph {
+  width: 80%;
+  margin: 1em 6em 1em 6em;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.our-menus-box {
+  display: flex;
+  margin: 0 6em 1em 6em;
+}
+
+.our-menus-box img {
+  width: 100%;
+  border: 20px solid black;
+  border-style: double;
+}
+
+h2 {
+  text-align: center;
+}
+
+.our-menus-box p {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 2em 2em 0 2em;
+}
+
+.the-expirience-box {
+  display: flex;
+  margin: 2em 6em 1em 6em;
+}
+
+.the-expirience-box img {
+  width: 100%;
+  border: 20px solid black;
+  border-style: double;
+}
+
+.the-expirience-box p {
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 2em 2em 0 2em;
+}
 
 /* Footer */
