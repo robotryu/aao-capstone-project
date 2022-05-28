@@ -35,7 +35,6 @@ header p {
   letter-spacing: 2px;
 }
 
-/* Section */
 .our-story {
   position: relative;
   text-align: center;
@@ -58,6 +57,8 @@ header p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Section */
 
 .our-story-paragraph {
   width: 80%;
