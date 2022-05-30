@@ -81,6 +81,15 @@ header p {
   text-align: center;
 }
 
+.left-container div, .right-container div {
+  width: 80%;
+}
+
+.left-container p, .right-container p {
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
 
 /* Footer */
 
