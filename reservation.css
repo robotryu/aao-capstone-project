@@ -2,20 +2,20 @@
 
 body {
   margin: 0;
+  font-family: 'Roboto Flex', sans-serif;
+  background-color: #F1EDEB;
 }
 
 header {
   display: flex;
   justify-content: end;
-  background-color: rgba(240,234,234,255);
+  background-color: #e2dede;
 }
 
 header img {
-  /*margin: 0.5em 40em 0.5em 3em;*/
-  margin: 0.5em auto 0.5em 3em;
+  margin: 0.5em 1em 0.5em 3em;
   width: 50px;
   height: auto;
-
 }
 
 header a {
@@ -26,4 +26,97 @@ header a {
   align-self: center;
   border: 5px solid black;
   padding: 0 5px;
+}
+
+header p {
+  margin: 1.8em auto 0 1em;
+  height: auto;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.our-story {
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-top: 1em;
+}
+
+.our-story img {
+  border: 20px solid black;
+  border-style: double;
+  width: 60%;
+  height: auto;
+}
+
+.centered {
+  font-size: 3em;
+  letter-spacing: 4px;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* menu Section */
+
+form fieldset {
+  margin: 0;
+  border: 0;
+  margin-top: 0.5em;
+}
+
+form div {
+  display: block;
+  margin: 0 0 1em 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border: 5px solid black;
+}
+
+form select, form button {
+  font-weight: 700;
+  font-size: 1.25em;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#date {
+  width: 99.25%;
+  font-weight: 700;
+  font-size: 1.25em;
+  display: block;
+  text-align: center;
+}
+
+/* Footer */
+
+footer {
+  background-color: #bebbbb;
+  font-weight: 600;
+  font-size: 1.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+footer h3 {
+  margin: 0 auto 0.5em 1em;
+}
+
+footer img {
+  width: 50px;
+}
+
+footer a {
+  margin: 1.5em;
+}
+
+footer :nth-child(4) {
+  position: absolute;
+  right: 0;
+  color: black;
+  text-decoration: none;
+  font-weight: 200;
 }

@@ -4,87 +4,103 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="images/ryu-logo.jpg"/>
   <title>Ryu Restaurant Reservation</title>
   <link rel="stylesheet" href="reservation.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <header id="header">
     <img src="images/ryu-logo.jpg">
+    <p>Ryu Restaurant</p>
     <a href="index.html">Home</a>
     <a href="menu.html">Menu</a>
     <a href="reservation.html">Reservation</a>
     <a href="careers.html">Careers</a>
   </header>
+  
+  <section>
+    <div class="our-story">
+      <img src="images/meal.jpg">
+      <h1 class="centered">RESERVATION</h1>
+    </div>
+    
+    <form method="get">
+      <fieldset>
+        <div>
+          <select id="seats" name="seats">
+            <option value selected disabled>Number of People</option>
+            <option value="1">1 Person</option>
+            <option value="2">2 People</option>
+            <option value="3">3 People</option>
+            <option value="4">4 People</option>
+            <option value="5">5 People</option>
+            <option value="6">6 People</option>
+            <option value="7">7 People</option>
+            <option value="8">8+ People</option>
+          </select>
+      </div>
 
-  <h1>Reservation</h1>
-
-  <form method="get">
-    <fieldset>
       <div>
-        <label for="seats">Number of people</label>
-        <select id="seats" name="seats">
-          <option value selected disabled>Number of People</option>
-          <option value="1">1 Person</option>
-          <option value="2">2 People</option>
-          <option value="3">3 People</option>
-          <option value="4">4 People</option>
-          <option value="5">5 People</option>
-          <option value="6">6 People</option>
-          <option value="7">7 People</option>
-          <option value="8">8+ People</option>
-        </select>
-    </div>
+        <input type="date" id="date" name="date">
+      </div>
 
-    <div>
-      <label for="date">Date</label>
-      <input type="date" id="date" name="date">
-    </div>
+      <div>
+        <select id="time" name="time">
+          <option value selected disabled>Time</option>
+          <option value="2300">11:00 PM</option>
+          <option value="2230">10:30 PM</option>
+          <option value="2200">10:00 PM</option>
+          <option value="2130">09:30 PM</option>
+          <option value="2100">09:00 PM</option>
+          <option value="2030">08:30 PM</option>
+          <option value="2000">08:00 PM</option>
+          <option value="1930">07:30 PM</option>
+          <option value="1900">07:00 PM</option>
+          <option value="1830">06:30 PM</option>
+          <option value="1800">06:00 PM</option>
+          <option value="1730">05:30 PM</option>
+          <option value="1700">05:00 PM</option>
+          <option value="1630">04:30 PM</option>
+          <option value="1600">04:00 PM</option>
+          <option value="1530">03:30 PM</option>
+          <option value="1500">03:00 PM</option>
+          <option value="1430">02:30 PM</option>
+          <option value="1400">02:00 PM</option>
+          <option value="1330">01:30 PM</option>
+          <option value="1300">01:00 PM</option>
+          <option value="1230">12:30 PM</option>
+          <option value="1200">12:00 PM</option>
+          <option value="1130">11:30 AM</option>
+          <option value="1100">11:00 AM</option>
+          <option value="1030">10:30 AM</option>
+          <option value="1000">10:00 AM</option>
+          <option value="0930">09:30 AM</option>
+          <option value="0900">09:00 AM</option>
+          <option value="0830">08:30 AM</option>
+          <option value="0800">08:00 AM</option>
+          <option value="0730">07:30 AM</option>
+          <option value="0700">07:00 AM</option>
+          </select>
+      </div>
 
-    <div>
-      <label for="time">Time</label>
-      <select id="time" name="time">
-        <option value selected disabled>Time</option>
-        <option value="2300">11:00 PM</option>
-        <option value="2230">10:30 PM</option>
-        <option value="2200">10:00 PM</option>
-        <option value="2130">09:30 PM</option>
-        <option value="2100">09:00 PM</option>
-        <option value="2030">08:30 PM</option>
-        <option value="2000">08:00 PM</option>
-        <option value="1930">07:30 PM</option>
-        <option value="1900">07:00 PM</option>
-        <option value="1830">06:30 PM</option>
-        <option value="1800">06:00 PM</option>
-        <option value="1730">05:30 PM</option>
-        <option value="1700">05:00 PM</option>
-        <option value="1630">04:30 PM</option>
-        <option value="1600">04:00 PM</option>
-        <option value="1530">03:30 PM</option>
-        <option value="1500">03:00 PM</option>
-        <option value="1430">02:30 PM</option>
-        <option value="1400">02:00 PM</option>
-        <option value="1330">01:30 PM</option>
-        <option value="1300">01:00 PM</option>
-        <option value="1230">12:30 PM</option>
-        <option value="1200">12:00 PM</option>
-        <option value="1130">11:30 AM</option>
-        <option value="1100">11:00 AM</option>
-        <option value="1030">10:30 AM</option>
-        <option value="1000">10:00 AM</option>
-        <option value="0930">09:30 AM</option>
-        <option value="0900">09:00 AM</option>
-        <option value="0830">08:30 AM</option>
-        <option value="0800">08:00 AM</option>
-        <option value="0730">07:30 AM</option>
-        <option value="0700">07:00 AM</option>
-        </select>
-    </div>
+      <div>
+        <button type="submit">Confirm reservation</button>
+      </div>
+      </fieldset>
+    </form>
+  </section>
 
-    <div>
-      <button type="submit">Confirm reservation</button>
-    </div>
-    </fieldset>
-  </form>
+  <footer>
+    <h3>SOCIAL MEDIA</h3>
 
+    <a href="https://github.com/robotryu" target="_blank"><img src="images/github-brands.svg"></i>
+
+    <a href="https://twitter.com/Robotryu" target="_blank"><img src="images/twitter-brands.svg""></a>
+
+    <a href="https://www.freepik.com/vectors/geometric-logo">Geometric logo vector created by rawpixel.com - www.freepik.com</a>
+  </footer>
 </body>
 </html>
